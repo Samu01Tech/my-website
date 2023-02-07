@@ -1,0 +1,15 @@
+@import "@fontsource/ibm-plex-sans";
+@import "theme.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
