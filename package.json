@@ -11,6 +11,15 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.6"
+    "astro": "^2.0.6",
+    "vite": "^4.1.1"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.14",
+    "@unocss/astro": "^0.49.4",
+    "@unocss/preset-icons": "^0.49.4",
+    "@unocss/preset-typography": "^0.49.4",
+    "@unocss/preset-wind": "^0.49.4",
+    "@unocss/reset": "^0.49.4"
   }
 }
