@@ -6,7 +6,7 @@ import Profile from "/profile.png";
 
 <BaseLayout>
   <main
-    class="md:min-h-safe-screen flex flex-col justify-center col-span-full space-y-4 md:col-span-6"
+    class="col-span-full flex flex-col justify-center space-y-4 md:col-span-6 md:min-h-safe-screen"
   >
     <h1 class="display-large">
       Hi, I'm
@@ -31,12 +31,12 @@ import Profile from "/profile.png";
     </p>
   </main>
   <aside
-    class="md:min-h-safe-screen flex flex-col justify-center col-span-full md:col-span-6"
+    class="col-span-full flex flex-col justify-center md:col-span-6 md:min-h-safe-screen"
   >
     <img
       src={Profile}
       alt="My Avatar"
-      class="blob w-full max-w-[400px] aspect-square mx-auto my-2 object-cover"
+      class="blob mx-auto my-2 aspect-square w-full max-w-[400px] object-cover"
     />
   </aside>
 </BaseLayout>
