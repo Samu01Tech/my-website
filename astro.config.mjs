@@ -1,8 +1,11 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
-// https://astro.build/config
+import Icons from "unplugin-icons/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  vite: {
+    plugins: [Icons({ compiler: "astro" })],
+  },
 });
