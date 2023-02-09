@@ -1,9 +1,13 @@
 ---
 import "../styles/theme.css";
+import Link from "../components/Link.astro";
 ---
 
 <div class="test">
-  <p class="text-red-500 font-bold">TEST</p>
+  <Link href="/about">
+    About
+    <div slot="icon">A</div>
+  </Link>
 </div>
 
 <style>
