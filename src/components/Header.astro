@@ -1,9 +1,51 @@
-<header class="flex flex-row justify-between">
+<header class="header">
   <div>SM</div>
   <nav class="flex flex-row list-none">
-    <li>projects</li>
-    <li>blog</li>
-    <li>contact</li>
-    <li>theme</li>
+    <li>
+      projects
+      <span class="i-carbon-portfolio"></span>
+    </li>
+    <li>
+      blog
+      <span class="i-carbon-blog"></span>
+    </li>
+    <li>
+      contact
+      <span class="i-carbon-email"></span>
+    </li>
+    <li>
+      theme
+      <span class="i-carbon-moon"></span>
+    </li>
   </nav>
 </header>
+
+<style>
+  .header {
+    grid-area: "header";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    gap: 10px;
+  }
+  .header div {
+    width: 42px;
+    height: 42px;
+  }
+  .header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+  }
+  .header nav li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+  }
+</style>
