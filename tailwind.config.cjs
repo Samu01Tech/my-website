@@ -7,6 +7,14 @@ module.exports = {
         // 4 rem is the height of the header
         "safe-screen": "calc(100vh - 4rem)",
       },
+      colors: {
+        primary: {
+          500: "var(--md-sys-color-primary)",
+        },
+        "on-primary": {
+          500: "var(--md-sys-color-on-primary)",
+        },
+      }
     },
     screens: {
       sm: "600px",

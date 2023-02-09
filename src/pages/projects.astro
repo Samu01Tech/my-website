@@ -1,19 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import Project from "../components/Project.astro";
 
 const projectsEntries = await getCollection("projects");
 ---
 
 <BaseLayout>
-  <h1 class="headline-large">Projects</h1>
-  {
-    projectsEntries.map((p) => (
-      <div>
-        <h2>{p.data.title}</h2>
-        <p>{p.data.description}</p>
-        <img src={p.data.image.src} alt={p.data.image.alt} />
-      </div>
-    ))
-  }
+  <h1 class="headline-large col-span-full">Projects</h1>
+  <main class="col-span-full grid grid-cols-1 md:grid-cols-4 gap-2 my-4">
+    {projectsEntries.map((p) => <Project p={p} />)}
+  </main>
 </BaseLayout>
