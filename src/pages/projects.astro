@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const projectsEntries = await getCollection("projects");
+---
+
+<BaseLayout>
+  <h1 class="headline-large">Projects</h1>
+  {
+    projectsEntries.map((p) => (
+      <div>
+        <h2>{p.data.title}</h2>
+        <p>{p.data.description}</p>
+        <img src={p.data.image.src} alt={p.data.image.alt} />
+      </div>
+    ))
+  }
+</BaseLayout>
