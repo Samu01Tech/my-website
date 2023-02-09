@@ -5,9 +5,26 @@
   margin: 0;
 }
 
+:root {
+  /* react brand color */
+  --react-color: #61dafb;
+  --on-react-color: #282c34;
+  /* svelte brand color */
+  --svelte-color: #ff3e00;
+  /* vue brand color */
+  --vue-color: #4fc08d;
+  /* UX color fuchsia*/
+  --ux-color: #ff00ff;
+  
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif !important;
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
-  transition: all 0.3s ease, color 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.blob {
+  border-radius: 53% 47% 34% 66% / 63% 46% 54% 37%;
 }

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Profile from "/profile.png";
 ---
 
 <BaseLayout>
@@ -21,36 +22,35 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       </span>
     </h1>
     <h2 class="headline-small">
-      I'm an Italian front-end web developer proficient in React, Svelte, and Vue.
+      I'm an Italian front-end web developer proficient in <span
+        class="mark react">React</span
+      >, <span class="mark svelte">Svelte</span>, and
+      <span class="mark vue">Vue</span>.
     </h2>
     <h2 class="headline-small">
-      I created several responsive and user-friendly websites and web applications
-      with a focus on <span class="mark ux">UX</span>, performance and SEO.
+      I created several responsive and user-friendly websites and web
+      applications with a focus on <span class="mark ux">UX</span>, performance
+      and SEO.
     </h2>
     <h2 class="headline-small">
       Always interested in modern web development technologies and frameworks.
     </h2>
   </main>
+  <aside>
+    <img src={Profile} alt="My Avatar" class="blob hero-image" />
+  </aside>
 </BaseLayout>
 
 <style>
   body {
-    /* react brand color */
-    --react-color: #61dafb;
-    --on-react-color: #282c34;
-    /* svelte brand color */
-    --svelte-color: #ff3e00;
-    /* vue brand color */
-    --vue-color: #4fc08d;
-    /* UX color fuchsia*/
-    --ux-color: #ff00ff;
+
   }
   .with-line {
     position: relative;
   }
   .svg-line {
     position: absolute;
-    top: 100%;
+    top: 85%;
     left: 0;
     fill: yellow;
   }
@@ -71,5 +71,28 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   }
   .mark.ux {
     background-color: var(--ux-color);
+  }
+  main {
+    grid-column: 1 / 7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero-image {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .hero-image {
+      display: block;
+    }
+  }
+  .hero-image {
+    grid-column: 7 / 13;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 </style>

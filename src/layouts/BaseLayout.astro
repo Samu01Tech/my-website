@@ -3,11 +3,11 @@ import "@fontsource/ibm-plex-sans";
 import "../styles/global.css";
 
 import Header from "../components/Header.astro";
-const { title, description, image = "fallback.webp" } = Astro.props;
+import Grid from "../components/Grid.astro";
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,13 +15,18 @@ const { title, description, image = "fallback.webp" } = Astro.props;
     <title>Samuele Mazzei | Web Developer</title>
   </head>
   <body>
-    <div class="container">
+    <Grid>
       <Header />
       <slot />
-    </div>
+    </Grid>
   </body>
 </html>
 
 <style>
-  
+  :global(:root) {
+    --sm: 600px;
+    --md: 905px;
+    --lg: 1240px;
+    --xl: 1440px;
+  }
 </style>

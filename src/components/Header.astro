@@ -1,34 +1,35 @@
 <header class="header">
   <div>SM</div>
   <nav class="flex flex-row list-none">
-    <li>
+    <a href="">
       projects
-      <span class="i-carbon-portfolio"></span>
-    </li>
-    <li>
+      <div class="i-carbon-portfolio"></div>
+    </a>
+    <a>
       blog
-      <span class="i-carbon-blog"></span>
-    </li>
-    <li>
+      <div class="i-carbon-blog"></div>
+    </a>
+    <a>
       contact
-      <span class="i-carbon-email"></span>
-    </li>
-    <li>
+      <div class="i-carbon-email"></div>
+    </a>
+    <a>
       theme
-      <span class="i-carbon-moon"></span>
-    </li>
+      <div class="i-carbon-moon"></div>
+    </a>
   </nav>
 </header>
 
 <style>
   .header {
-    grid-area: "header";
+    grid-column: 1 / -1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 16px 0px;
     gap: 10px;
+    height: 64px;
   }
   .header div {
     width: 42px;
