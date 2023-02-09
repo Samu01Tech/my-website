@@ -11,8 +11,8 @@ export default defineConfig({
         compiler: "astro",
         iconCustomizer(collection, icon, props) {
           if (collection === "carbon") {
-            props.width = "24px";
-            props.height = "24px";
+            props.width = "28px";
+            props.height = "28px";
           }
         },
       }),

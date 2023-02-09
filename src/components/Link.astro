@@ -4,12 +4,12 @@ const { to } = Astro.props;
 
 <a
   href={to}
-  class="hover-effect flex flex-row items-center space-x-2 md:space-x-0 on-background-text"
+  class="hover-effect flex flex-row items-center md:space-x-2 space-x-0 on-background-text"
 >
-  <span class="label-large md:hidden">
+  <span class="label-large hidden md:block">
     <slot />
   </span>
-  <span class="w-6 h-6 grid place-items-center">
+  <span class="grid place-items-center">
     <slot name="icon" />
   </span>
 </a>
