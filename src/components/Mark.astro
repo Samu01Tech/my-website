@@ -1,0 +1,26 @@
+---
+const { color } = Astro.props;
+---
+
+<span class={`mark ${color}`}><slot /></span>
+
+<style>
+  .mark {
+    padding-inline: 0.25rem;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+  }
+  .react {
+    background-color: var(--react-color);
+    color: var(--on-react-color);
+  }
+  .svelte {
+    background-color: var(--svelte-color);
+  }
+  .vue {
+    background-color: var(--vue-color);
+  }
+  .ux {
+    background-color: var(--ux-color);
+  }
+</style>
