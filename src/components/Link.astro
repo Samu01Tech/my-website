@@ -2,11 +2,41 @@
 const { to } = Astro.props;
 ---
 
-<a href={to} class="">
-  <span class="">
-    <slot/>
+<a
+  href={to}
+  class="hover-effect flex flex-row items-center space-x-2 md:space-x-0 on-background-text"
+>
+  <span class="label-large md:hidden">
+    <slot />
   </span>
-  <span class="">
+  <span class="w-6 h-6 grid place-items-center">
     <slot name="icon" />
   </span>
 </a>
+
+<style>
+  a {
+    outline: none;
+  }
+  .hover-effect {
+    position: relative;
+  }
+  .hover-effect::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--md-sys-color-primary);
+    scale: 0 1;
+    transform-origin: 100%;
+    border-radius: 14px;
+    transition: scale 0.3s;
+  }
+  .hover-effect:hover::after,
+  .hover-effect:focus::after {
+    scale: 1 1;
+    transform-origin: 0;
+  }
+</style>

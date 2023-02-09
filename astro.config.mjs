@@ -6,6 +6,16 @@ import Icons from "unplugin-icons/vite";
 export default defineConfig({
   integrations: [tailwind()],
   vite: {
-    plugins: [Icons({ compiler: "astro" })],
+    plugins: [
+      Icons({
+        compiler: "astro",
+        iconCustomizer(collection, icon, props) {
+          if (collection === "carbon") {
+            props.width = "24px";
+            props.height = "24px";
+          }
+        },
+      }),
+    ],
   },
 });

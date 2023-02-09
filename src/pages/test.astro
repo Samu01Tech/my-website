@@ -1,19 +1,23 @@
 ---
 import "../styles/theme.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
 import Link from "../components/Link.astro";
 import IconPortfolio from "~icons/carbon/portfolio";
 ---
 
-<div class="test">
-  <Link href="/about">
-    About
-    <IconPortfolio slot="icon" />
-  </Link>
-</div>
+<BaseLayout>
+  <div class="test">
+    <Link to="/about">
+      About
+      <IconPortfolio slot="icon" />
+    </Link>
+  </div>
+</BaseLayout>
 
 <style>
   .test {
     display: grid;
     place-items: center;
+    height: 100vh;
   }
 </style>
