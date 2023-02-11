@@ -14,6 +14,12 @@ module.exports = {
         "on-primary": {
           500: "var(--md-sys-color-on-primary)",
         },
+        surface: {
+          500: "var(--md-sys-color-surface)",
+        },
+        "on-surface": {
+          500: "var(--md-sys-color-on-surface)",
+        },
       }
     },
     screens: {

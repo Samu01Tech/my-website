@@ -24,8 +24,8 @@ const blogCollection = defineCollection({
     author: z.string().default("Samuele M."),
     language: z.enum(["it", "en"]),
     publishDate: z.string().transform((str) => new Date(str)),
-    editDate: z.date(),
-    authorContact: z.string().email(),
+    editDate: z.date().optional(),
+    authorContact: z.string().email().default("samumaz01+blog@gmail.com"),
     canonicalURL: z.string().url(),
   }),
 });

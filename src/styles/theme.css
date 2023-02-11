@@ -35,3 +35,7 @@ body {
 .blob {
   border-radius: 53% 47% 34% 66% / 63% 46% 54% 37%;
 }
+
+.svgline {
+  fill: white;
+}

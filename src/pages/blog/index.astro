@@ -1,16 +1,15 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
-import Project from "../components/Project.astro";
 
-const projectsEntries = await getCollection("projects");
+const blogEntries = await getCollection("blog", (b) => b.data.isDraft !== true);
 ---
 
 <BaseLayout>
   <div class="md:min-h-safe-screen col-span-full items-center">
     <h1 class="display-small my-8">Projects</h1>
     <main class="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-2 my-4">
-      {projectsEntries.map((p) => <Project p={p} />)}
+      {blogEntries.map((b) => JSON.stringify(b.data))}
     </main>
   </div>
 </BaseLayout>

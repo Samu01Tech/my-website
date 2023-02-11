@@ -15,6 +15,10 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout>
-  <h1 class="headline-large col-span-full">{entry.data.title}</h1>
-  <Content />
+  <article class="col-span-full">
+    <h1 class="headline-large col-span-full">{entry.data.title}</h1>
+    <div class="title-large">
+      <Content />
+    </div>
+  </article>
 </BaseLayout>
