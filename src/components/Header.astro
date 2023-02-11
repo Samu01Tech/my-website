@@ -8,6 +8,7 @@ import LinkContainer from "./LinkContainer.astro";
 ---
 
 <header class="col-span-full flex h-16 flex-row items-center justify-between">
+  <!-- TODO fix logo on light theme -->
   <Link to="/"><img src="/sign.svg" alt="logo" slot="icon" /></Link>
   <LinkContainer>
     <Link to="/projects">
@@ -24,6 +25,7 @@ import LinkContainer from "./LinkContainer.astro";
     </Link>
     <Link>
       theme
+      <!-- TODO add logic to change theme -->
       <IconMoon slot="icon" />
     </Link>
   </LinkContainer>

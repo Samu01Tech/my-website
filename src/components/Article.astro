@@ -1,11 +1,14 @@
 ---
 const formatter = new Intl.RelativeTimeFormat("it");
 const { a } = Astro.props;
-const diff = new Date() - new Date(a.data.publishDate);
+const diff = new Date().getTime() - new Date(a.data.publishDate).getTime();
 const ago = formatter.format(Math.round(-diff / (1000 * 60 * 60 * 24)), "day");
 ---
 
-<a href={`/blog/${a.slug}`} class="flex flex-col md:flex-row md:items-center my-4 hover:text-primary-500">
+<a
+  href={`/blog/${a.slug}`}
+  class="flex flex-col md:flex-row md:items-center my-4 hover:text-primary-500"
+>
   <article class="flex flex-col gap-1">
     <h3 class="title-large">{a.data.title}</h3>
     <time class="body-medium">{ago}</time>

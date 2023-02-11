@@ -1,5 +1,5 @@
 ---
-isDraft: true
+isDraft: false
 title: "Come ho organizzato la mia casella di posta elettronica e perché dovresti farlo anche tu"
 description: ""
 image:

@@ -9,9 +9,11 @@ const blogEntries = await getCollection("blog", (b) => b.data.isDraft !== true);
 <BaseLayout>
   <div class="md:min-h-safe-screen col-span-full items-center">
     <h1 class="display-small my-8">Blog</h1>
+    <!-- TODO add separation line? -->
     <main class="flex flex-col rounded-xl">
       {
         blogEntries.length === 0 ? (
+          // TODO: add a nice illustration
           <p class="text-center">Ancora non ho scritto nulla...</p>
         ) : (
           blogEntries.map((a) => <Article a={a} />)
