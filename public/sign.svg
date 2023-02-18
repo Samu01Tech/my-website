@@ -1,4 +1,5 @@
 <svg id="sign" width="41" height="27" viewBox="0 0 41 27" xmlns="http://www.w3.org/2000/svg">
+<!-- TODO fix svg colors -->
 <style>
     #sign path {
         fill: #000;

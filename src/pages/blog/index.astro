@@ -9,8 +9,7 @@ const blogEntries = await getCollection("blog", (b) => b.data.isDraft !== true);
 <BaseLayout>
   <div class="md:min-h-safe-screen col-span-full items-center">
     <h1 class="display-small my-8">Blog</h1>
-    <!-- TODO add separation line? -->
-    <main class="flex flex-col rounded-xl">
+    <main class="flex flex-col rounded-xl divide-y divide-primary-500">
       {
         blogEntries.length === 0 ? (
           // TODO: add a nice illustration
