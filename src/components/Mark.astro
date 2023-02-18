@@ -4,7 +4,9 @@ const { color } = Astro.props;
 
 <span class={`mark ${color}`}><slot /></span>
 
-<style>
+<!-- styles are in theme.css -->
+<!-- TODO check is:global not working -->
+<!-- <style>
   .mark {
     padding-inline: 0.25rem;
     border-radius: 0.25rem;
@@ -27,4 +29,4 @@ const { color } = Astro.props;
     background: linear-gradient(90deg, #8ebc11, #0095d7);
     color: #000;
   }
-</style>
+</style> -->

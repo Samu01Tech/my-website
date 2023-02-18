@@ -41,3 +41,26 @@ body {
   background-color: var(--md-sys-color-tertiary);
   color: var(--md-sys-color-on-tertiary);
 }
+
+.mark {
+  padding-inline: 0.25rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+}
+.react {
+  background-color: var(--react-color);
+  color: var(--on-react-color);
+}
+.svelte {
+  background-color: var(--svelte-color);
+}
+.vue {
+  background-color: var(--vue-color);
+}
+.ux {
+  background-color: var(--ux-color);
+}
+.tsv {
+  background: linear-gradient(90deg, #8ebc11, #0095d7);
+  color: #000;
+}
