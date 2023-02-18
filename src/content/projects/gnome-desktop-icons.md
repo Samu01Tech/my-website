@@ -2,7 +2,7 @@
 title: "Gnome Desktop Icons"
 description: "My custom Fedora icons"
 image: {
-    src: "https://api.lorem.space/image/book?w=80&h=80&hash=g132zbta",
+    src: "https://raw.githubusercontent.com/Samu01Tech/contents/main/Projects/cover-gh.png",
     alt: "Python 3.5"
 }
 ---
