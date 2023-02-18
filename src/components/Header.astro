@@ -3,13 +3,14 @@ import IconPortfolio from "~icons/carbon/portfolio";
 import IconBlog from "~icons/carbon/blog";
 import IconEmail from "~icons/carbon/email";
 import IconMoon from "~icons/carbon/moon";
+import IconSun from "~icons/carbon/sun";
 import Link from "../components/Link.astro";
 import LinkContainer from "./LinkContainer.astro";
 ---
 
 <header class="col-span-full flex h-16 flex-row items-center justify-between">
   <!-- TODO fix logo on light theme -->
-  <Link to="/"><img src="/sign.svg" alt="logo" slot="icon" /></Link>
+  <Link to="/"><img src="/sign.svg" alt="SM" slot="icon" /></Link>
   <LinkContainer>
     <Link to="/projects">
       projects
@@ -23,10 +24,11 @@ import LinkContainer from "./LinkContainer.astro";
       contact
       <IconEmail slot="icon" />
     </Link>
-    <Link>
+    <Link button>
       theme
       <!-- TODO add logic to change theme -->
-      <IconMoon slot="icon" />
+      <IconMoon id="moon" slot="icon" class="transition-opacity" />
+      <IconSun id="sun" slot="icon" class="transition-opacity" />
     </Link>
   </LinkContainer>
 </header>

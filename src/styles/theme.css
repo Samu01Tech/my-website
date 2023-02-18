@@ -30,12 +30,14 @@ body {
   font-family: "IBM Plex Sans", sans-serif !important;
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .blob {
   border-radius: 53% 47% 34% 66% / 63% 46% 54% 37%;
 }
 
-.svgline {
-  fill: white;
+::selection {
+  background-color: var(--md-sys-color-tertiary);
+  color: var(--md-sys-color-on-tertiary);
 }

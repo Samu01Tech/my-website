@@ -16,13 +16,16 @@
     }
     #svgline path {
         fill: none;
-        stroke: #fff;
+        stroke: #006c51;
         stroke-width: 3;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
         animation: dash 2.5s ease-in-out forwards;
+    }
+    .dark #svgline path{
+        stroke: #40dfae;
     }
     @keyframes dash {
         80% {
