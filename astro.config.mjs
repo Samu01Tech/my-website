@@ -4,7 +4,9 @@ import Icons from "unplugin-icons/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://samuelemazzei.me",
+  // TODO: Change this when custom domain works
+  site: "samu01tech.github.io",
+  base: "/my-website",
   integrations: [tailwind()],
   vite: {
     plugins: [
