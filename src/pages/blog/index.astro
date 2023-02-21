@@ -13,7 +13,7 @@ const blogEntries = await getCollection("blog", (b) => b.data.isDraft !== true);
       {
         blogEntries.length === 0 ? (
           // TODO: add a nice illustration
-          <p class="text-center">Ancora non ho scritto nulla...</p>
+          <p class="text-center">Nothing yet...</p>
         ) : (
           blogEntries.map((a) => <Article a={a} />)
         )

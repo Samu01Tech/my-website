@@ -19,3 +19,7 @@ phase with a group of students and teachers.
 I was the lead in the frontend development of the project. I was in charge
 of the design, which is all built from the ground up, and the implementation
 of the frontend. I also set up a Figma library for the team to use.
+
+[https://kadidak-landing.netlify.app](https://kadidak-landing.netlify.app)
+
+**Gallery**: [https://photos.app.goo.gl/XJDcuSjpBLXP1RHR9](https://photos.app.goo.gl/XJDcuSjpBLXP1RHR9)

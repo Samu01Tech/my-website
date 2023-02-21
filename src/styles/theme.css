@@ -56,6 +56,7 @@ body {
 }
 .vue {
   background-color: var(--vue-color);
+  color: #000;
 }
 .ux {
   background-color: var(--ux-color);
@@ -63,4 +64,8 @@ body {
 .tsv {
   background: linear-gradient(90deg, #8ebc11, #0095d7);
   color: #000;
+}
+.red {
+  background-color: #ff0000;
+  color: #fff;
 }
