@@ -6,7 +6,6 @@ import Icons from "unplugin-icons/vite";
 export default defineConfig({
   // TODO: Change this when custom domain works
   site: "samu01tech.github.io",
-  base: "/my-website",
   integrations: [tailwind()],
   vite: {
     plugins: [
