@@ -69,3 +69,17 @@ body {
   background-color: #ff0000;
   color: #fff;
 }
+
+.keyboard-shortcut {
+  /* Background and color */
+  background-color: rgb(209, 213, 219);
+  border-radius: 0.25rem;
+  color: rgb(55, 65, 81);
+
+  /* Bottom shadow */
+  box-shadow: rgb(167, 170, 175) 0px -4px 0px inset,
+    rgba(0, 0, 0, 0.4) 0px 1px 1px;
+
+  /* Spacing */
+  padding: 0.25rem 0.5rem;
+}

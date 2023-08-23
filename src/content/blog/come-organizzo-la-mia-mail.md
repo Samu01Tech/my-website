@@ -121,9 +121,9 @@ Se vi sembrano troppi click potete o usare il pulsante `Sposta in` che permette 
 
 Sono tre cose da ricordare:
 
-1. Premendo <kbd>l<kbd> si apre, indovinate un po', la lista delle etichette (_label_) e possiamo selezionare quella desiderata, iniziando a scrivere il nome dell'etichetta e premendo `Invio` per applicarla
-2. Premendo `e` la mail viene archiviata e si passa alla mail successiva
-3. Con la combinazione `Alt Gr` + `à`, quindi in pratica digitando `#`, la mail viene invece spostata nel cestino.
+1. Premendo <kbd class="keyboard-shortcut">l</kbd> si apre, indovinate un po', la lista delle etichette (_label_) e possiamo selezionare quella desiderata, iniziando a scrivere il nome dell'etichetta e premendo `Invio` per applicarla
+2. Premendo <kbd class="keyboard-shortcut">e</kbd> la mail viene archiviata e si passa alla mail successiva
+3. Con la combinazione <kbd class="keyboard-shortcut">AltGr + à</kbd>, quindi in pratica digitando <kbd class="keyboard-shortcut">#</kbd>, la mail viene invece spostata nel cestino.
 
 Vedrete che con un po' di pratica riuscirete a smistare le mail in pochi secondi.
 
