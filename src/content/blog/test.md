@@ -1,6 +1,6 @@
 ---
 isDraft: true
-title: "Come ho organizzato la mia casella di posta elettronica e perché dovresti farlo anche tu"
+title: "Test Page"
 description: ""
 image:
   { src: "https://api.lorem.space/image/album?hash=uacw5tdy", alt: "picture" }

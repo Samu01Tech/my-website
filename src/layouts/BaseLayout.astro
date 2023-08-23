@@ -4,6 +4,15 @@ import "../styles/theme.css";
 
 import Header from "../components/Header.astro";
 import Grid from "../components/Grid.astro";
+import { SEO } from "astro-seo";
+const {
+  articleTitle,
+  articleDescription,
+  articleImage,
+  articleAlt,
+  articleDate,
+  articleAuthor,
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -14,7 +23,55 @@ import Grid from "../components/Grid.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="sign.svg" type="image/svg" />
     <meta name="theme-color" content="#38d9a9" />
-    <title>Samuele Mazzei | Web Developer</title>
+    <meta name="”robots”" content="index, follow" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{articleTitle ?? "Samuele Mazzei | Web Developer"}</title>
+    <meta
+      name="description"
+      content={articleDescription ??
+        "Hi, I'm a web developer. Let's get in touch and build something amazing together."}
+    />
+    <meta
+      name="image"
+      content={articleImage ?? "https://samuelemazzei.dev/sign.svg"}
+    />
+
+    <SEO
+      title={articleTitle}
+      titleDefault="Samuele Mazzei | Web Developer"
+      description={articleDescription ??
+        "Hi, I'm a web developer. Let's get in touch and build something amazing together."}
+      openGraph={{
+        basic: {
+          type: "article",
+          title: articleTitle ?? "Samuele Mazzei | Web Developer",
+          image: articleImage ?? "https://samuelemazzei.dev/sign.svg",
+        },
+        optional: {
+          description:
+            articleDescription ??
+            "Hi, I'm a web developer. Let's get in touch and build something amazing together.",
+        },
+        image: {
+          alt: articleAlt ?? "A cover image for the article",
+        },
+        article: {
+          publishedTime: articleDate,
+          modifiedTime: articleDate,
+          authors: [articleAuthor ?? "Samuele Mazzei"],
+        },
+      }}
+      twitter={{
+        card: "summary_large_image",
+        creator: "@Samu01Tech",
+        title: articleTitle ?? "Samuele Mazzei | Web Developer",
+        description:
+          articleDescription ??
+          "Hi, I'm a web developer. Let's get in touch and build something amazing together.",
+        image: articleImage ?? "https://samuelemazzei.dev/sign.svg",
+        imageAlt: articleAlt ?? "A cover image for the article",
+      }}
+    />
   </head>
   <body>
     <Grid>
@@ -23,5 +80,3 @@ import Grid from "../components/Grid.astro";
     </Grid>
   </body>
 </html>
-
-<style></style>
