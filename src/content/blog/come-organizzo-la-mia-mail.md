@@ -25,7 +25,7 @@ Nonstante le app di messaggistica e i social siano lo strumento principale per c
 
 Ed è facile perdersi informazioni importanti.
 
-Per questo è importante fare ordine nelle centinaia di mail arretrate (esatto, parlo di quel numerino rosso che appare sull'icona della mail) e organizzare la propria casella di posta in modo da poter trovare ciò che ci serve in poco tempo.
+Per questo è fondamentale fare ordine nelle centinaia di mail arretrate (esatto, parlo di quel numerino rosso che appare sull'icona della mail) e organizzare la propria casella di posta in modo da poter trovare ciò che ci serve in poco tempo.
 
 In questo articolo mostrerò come ho deciso di organizzare la mia _inbox_ e come faccio a gestire le mail che ricevo per avere una cosiddetta **inbox zero**.
 
@@ -35,11 +35,11 @@ In questo articolo mostrerò come ho deciso di organizzare la mia _inbox_ e come
 
 In questo articolo parlerò nello specifico di una mail google e il suo client di posta elettronica Gmail. Tuttavia, le idee che esporrò possono essere applicate a qualsiasi client di posta elettronica e a qualsiasi provider.
 
-> 💡 Se sei solito leggere le mail da uno smartphone nessun problema: puoi applicare questi metodi anche nella app (più o meno). Tuttavia il mio consiglio per recuperare tutte le mail arretrate è di <u>usare un computer</u>.
+> 💡 Se sei solito leggere le mail da uno smartphone nessun problema: puoi applicare questi metodi anche nell'app (più o meno). Tuttavia il mio consiglio per recuperare tutte le mail arretrate è di <u>usare un computer</u>.
 
 ## Step 1: Cominciamo con alcune impostazioni
 
-Per prima cosa andremo a toccare qualcosa che pochi di voi hanno mai aperto: le impostazioni di Gmail. Tranquilli nulla di complicato. Andiamo su [Gmail](https://mail.google.com/) e clicchiamo sull'icona a forma di ingranaggio in alto a destra. Clicchiamo su **Impostazioni**. Quindi clicca si **Visualizza tutte le impostazioni**.
+Per prima cosa andremo a toccare qualcosa che pochi di voi hanno mai aperto: le impostazioni di Gmail. Tranquilli nulla di complicato. Andiamo su [Gmail](https://mail.google.com/) e clicchiamo sull'icona a forma di ingranaggio in alto a destra. Clicchiamo su **Impostazioni**. Quindi clicca su **Visualizza tutte le impostazioni**.
 
 Nella sezione `Generali` possiamo:
 
@@ -79,7 +79,7 @@ Prima di iniziare a organizzare la nostra casella di posta è importante capire 
 
 Come anticipato prima le etichette sono dei contenitori che possiamo creare per suddividere e organizzare le nostre mail.
 
-Per creare un etichetta è sufficiente andare nella barra laterale di Gmail e cliccare sul ➕ accanto alla voce `Etichette`. Inseriamo il nome dell'etichetta e clicchiamo su crea.
+Per creare un'etichetta è sufficiente andare nella barra laterale di Gmail e cliccare sul ➕ accanto alla voce `Etichette`. Inseriamo il nome dell'etichetta e clicchiamo su crea.
 
 Prima di iniziare a creare etichette a caso, è importante capire come vogliamo organizzare la nostra casella di posta. Per questo è importante capire cosa ci arriva nella nostra casella di posta.
 
@@ -141,7 +141,7 @@ Ci mettiamo nella barra di ricerca, e premete il tasto delle opzioni di ricerca 
 
 Questa tecnica può funzionare ma spesso vengono selezionate anche mail che non ci interessano. Quindi prendete una mail di riferimento del servizio che volete filtrare, apritela e cliccate sul pulsante con i tre puntini. Selezionate la voce **Filtra i messaggi di questo tipo** e vi compilerà in automatico la barra di ricerca con i parametri giusti.
 
-Una volta che state visualizzando le mail che vi interessano, potete selezionarle tutte (attenzione a selezionare anche quelle di in altre pagine con i tasto apposito in cima alla lista di mail) e assegnare l'etichetta desiderata, sempre da pulsante o da scorciatoie da tastiera.
+Una volta che state visualizzando le mail che vi interessano, potete selezionarle tutte (attenzione a selezionare anche quelle in altre pagine con il tasto apposito in cima alla lista di mail) e assegnare l'etichetta desiderata, sempre da pulsante o da scorciatoie da tastiera.
 
 Questo lavoro richiederà un po' di tempo ma vi permetterà di avere una casella di posta più pulita e organizzata.
 
