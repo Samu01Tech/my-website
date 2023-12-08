@@ -24,10 +24,20 @@ import LinkContainer from "./LinkContainer.astro";
       contact
       <IconEmail slot="icon" />
     </Link>
-    <Link button>
+    <!-- <Link button>
       theme
-      <IconMoon id="moon" slot="icon" class="transition-opacity" />
-      <IconSun id="sun" slot="icon" class="transition-opacity" />
-    </Link>
+      <IconMoon
+        transition:persist
+        id="moon"
+        slot="icon"
+        class="transition-opacity"
+      />
+      <IconSun
+        transition:persist
+        id="sun"
+        slot="icon"
+        class="transition-opacity"
+      />
+    </Link> -->
   </LinkContainer>
 </header>

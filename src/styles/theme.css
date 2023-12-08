@@ -83,3 +83,32 @@ body {
   /* Spacing */
   padding: 0.25rem 0.5rem;
 }
+
+a {
+  outline: none;
+}
+.hover-effect {
+  position: relative;
+}
+.hover-effect::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--md-sys-color-primary);
+  scale: 0 1;
+  transform-origin: 100%;
+  border-radius: 14px;
+  transition: scale 0.15s;
+}
+.hover-effect:hover::after,
+.hover-effect:focus::after {
+  scale: 1 1;
+  transform-origin: 0;
+}
+
+.text-balance {
+  text-wrap: balance;
+}

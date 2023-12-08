@@ -7,12 +7,14 @@ const blogEntries = await getCollection("blog", (b) => b.data.isDraft !== true);
 ---
 
 <BaseLayout>
-  <div class="md:min-h-safe-screen col-span-full items-center">
+  <div
+    class="md:min-h-safe-screen col-span-full items-center"
+    transition:animate="slide"
+  >
     <h1 class="display-small my-8">Blog</h1>
     <main class="flex flex-col rounded-xl divide-y divide-primary-500">
       {
         blogEntries.length === 0 ? (
-          // TODO: add a nice illustration
           <p class="text-center">Nothing yet...</p>
         ) : (
           blogEntries.map((a) => <Article a={a} />)

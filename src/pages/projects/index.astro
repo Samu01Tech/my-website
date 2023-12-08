@@ -7,9 +7,12 @@ const projectsEntries = await getCollection("projects");
 ---
 
 <BaseLayout>
-  <div class="md:min-h-safe-screen col-span-full items-center">
+  <div
+    class="md:min-h-safe-screen col-span-full items-center"
+    transition:animate="slide"
+  >
     <h1 class="display-small my-8">Projects</h1>
-    <main class="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-2 my-4">
+    <main class="grid grid-cols-1 md:grid-cols-4 grid-flow-dense gap-4 my-4">
       {projectsEntries.map((p) => <Project p={p} />)}
     </main>
   </div>

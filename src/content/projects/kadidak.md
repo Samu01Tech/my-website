@@ -1,8 +1,7 @@
 ---
 title: "Kadidak"
 description: "An education platform"
-image:
-  { src: "https://kadidak-landing.netlify.app/favicon.ico", alt: "placeholder" }
+image: { src: "/projects-assets/kadidak.png", alt: "placeholder" }
 large: true
 ---
 

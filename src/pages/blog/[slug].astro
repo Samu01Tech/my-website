@@ -1,4 +1,5 @@
 ---
+import IconArrowLeft from "~icons/carbon/arrow-left";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -25,8 +26,16 @@ const { Content } = await entry.render();
   articleAlt={entry.data.image.alt}
 >
   <article
-    class="prose prose-emerald md:prose-xl dark:prose-invert prose-h1:my-8 prose-blockquote:border-primary-500 col-span-full md:mx-auto"
+    transition:animate="slide"
+    class="prose prose-emerald md:prose-lg dark:prose-invert prose-h1:my-8 prose-blockquote:border-primary-500 col-span-full md:mx-auto"
   >
+    <button
+      onclick="history.back()"
+      class="text-primary-500 hover-effect flex items-center mb-4 body-large"
+    >
+      <IconArrowLeft class="inline-block w-4 h-4 mr-2" />
+      Back to blog
+    </button>
     <Content />
   </article>
   <div class="col-span-full w-full mx-auto my-8 bg-[#2e312f] p-8 rounded-lg">

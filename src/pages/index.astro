@@ -1,12 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Mark from "../components/Mark.astro";
-import Profile from "/profile2-removebg.png";
 ---
 
 <BaseLayout>
   <main
-    class="col-span-full flex flex-col justify-center space-y-4 md:col-span-6 md:min-h-safe-screen"
+    transition:animate="slide"
+    class="col-span-full flex flex-col justify-center space-y-4 md:col-span-6 md:min-h-safe-screen text-balance"
   >
     <h1 class="display-large">
       Hi, I'm
@@ -16,7 +16,9 @@ import Profile from "/profile2-removebg.png";
       </span>
     </h1>
     <p class="headline-small">
-      I'm an Italian front-end web developer proficient in <Mark color="react">React</Mark>, <Mark color="svelte">Svelte</Mark>, and
+      I'm an Italian front-end web developer proficient in <Mark color="react">
+        React
+      </Mark>, <Mark color="svelte">Svelte</Mark>, and
       <Mark color="vue">Vue</Mark>.
     </p>
     <p class="headline-small">
@@ -32,7 +34,7 @@ import Profile from "/profile2-removebg.png";
     class="col-span-full flex flex-col justify-center md:col-span-6 md:min-h-safe-screen"
   >
     <img
-      src={Profile}
+      src="/profile2-removebg.png"
       alt="My Avatar"
       class="blob bg-primary-500 mx-auto my-2 aspect-square w-full max-w-[400px] object-cover"
     />

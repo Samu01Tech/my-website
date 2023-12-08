@@ -2,6 +2,8 @@
 import "@fontsource/ibm-plex-sans";
 import "../styles/theme.css";
 
+import { ViewTransitions } from "astro:transitions";
+
 import Header from "../components/Header.astro";
 import Grid from "../components/Grid.astro";
 import { SEO } from "astro-seo";
@@ -16,7 +18,7 @@ const {
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -72,6 +74,7 @@ const {
         imageAlt: articleAlt ?? "A cover image for the article",
       }}
     />
+    <ViewTransitions />
   </head>
   <body>
     <Grid>

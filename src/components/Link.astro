@@ -6,10 +6,12 @@ const { to, button } = Astro.props;
   !button ? (
     <a
       href={to}
+
       class="hover-effect on-background-text flex flex-row items-center space-x-0 md:space-x-2"
     >
       <span class="label-large hidden md:block">
         <slot />
+        <span class="sr-only">home</span>
       </span>
       <span class="grid place-items-center">
         <slot name="icon" />
@@ -20,7 +22,7 @@ const { to, button } = Astro.props;
       onclick="toggleDarkMode()"
       class="hover-effect on-background-text flex flex-row items-center space-x-0 md:space-x-2"
     >
-      <span class="label-large hidden md:block">
+      <span class="hidden md:block">
         <slot />
       </span>
       <span class="grid place-items-center">
@@ -59,30 +61,3 @@ const { to, button } = Astro.props;
     </script>
   )
 }
-
-<style>
-  a {
-    outline: none;
-  }
-  .hover-effect {
-    position: relative;
-  }
-  .hover-effect::after {
-    content: "";
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: var(--md-sys-color-primary);
-    scale: 0 1;
-    transform-origin: 100%;
-    border-radius: 14px;
-    transition: scale 0.3s;
-  }
-  .hover-effect:hover::after,
-  .hover-effect:focus::after {
-    scale: 1 1;
-    transform-origin: 0;
-  }
-</style>

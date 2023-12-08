@@ -1,4 +1,5 @@
 ---
+import IconArrowLeft from "~icons/carbon/arrow-left";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 // 1. Generate a new path for every collection entry
@@ -15,13 +16,19 @@ const { Content } = await entry.render();
 ---
 
 <BaseLayout>
-  <article class="col-span-full">
-    <h1 class="headline-large col-span-full">{entry.data.title}</h1>
-    <article
-      class="prose prose-emerald prose-xl dark:prose-invert prose-h1:my-8 prose-blockquote:border-primary-500 max-w-none"
+  <div class="col-span-full mt-6" transition:animate="slide">
+    <button
+      onclick="history.back()"
+      class="text-primary-500 hover-effect flex items-center mb-4"
     >
+      <IconArrowLeft class="inline-block w-4 h-4 mr-2" />
+      Back to projects
+    </button>
+    <article
+      class="prose prose-emerald md:prose-lg dark:prose-invert prose-h1:my-8 prose-blockquote:border-primary-500 max-w-none"
+    >
+      <h1 class="display-small col-span-full">{entry.data.title}</h1>
       <Content />
     </article>
-    <!-- TODO add pictures in grid -->
-  </article>
+  </div>
 </BaseLayout>
