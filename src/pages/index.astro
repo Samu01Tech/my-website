@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Mark from "../components/Mark.astro";
+import { Image } from "astro:assets";
+import profilePicture from "../../public/profile.webp";
 ---
 
 <BaseLayout>
@@ -33,8 +35,8 @@ import Mark from "../components/Mark.astro";
   <aside
     class="col-span-full flex flex-col justify-center md:col-span-6 md:min-h-safe-screen"
   >
-    <img
-      src="/profile2-removebg.png"
+    <Image
+      src={profilePicture}
       alt="My Avatar"
       class="blob bg-primary-500 mx-auto my-2 aspect-square w-full max-w-[400px] object-cover"
     />
