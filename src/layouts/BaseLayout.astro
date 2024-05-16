@@ -7,6 +7,7 @@ import { ViewTransitions } from "astro:transitions";
 import Header from "../components/Header.astro";
 import Grid from "../components/Grid.astro";
 import { SEO } from "astro-seo";
+import ThemeManager from "../components/ThemeManager.astro";
 const {
   articleTitle,
   articleDescription,
@@ -18,7 +19,7 @@ const {
 ---
 
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -74,6 +75,7 @@ const {
         imageAlt: articleAlt ?? "A cover image for the article",
       }}
     />
+    <ThemeManager defaultTheme="auto" />
     <ViewTransitions />
   </head>
   <body>
